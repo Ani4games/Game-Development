@@ -1,3 +1,4 @@
+
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 // background image
@@ -240,3 +241,5 @@ setInterval(() => {
 }, 1000);
 
 update();
+
+
