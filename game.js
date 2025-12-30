@@ -1,4 +1,3 @@
-
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 // background image
@@ -191,15 +190,15 @@ function updateDirector() {
   }
 }
 
-function drawDebug() {
-  ctx.fillStyle = "white";
-  ctx.font = "14px Arial";
-  ctx.fillText(`Director: ${directorMode}`, 10, 50);
+// function drawDebug() {
+//   ctx.fillStyle = "white";
+//   ctx.font = "14px Arial";
+//   ctx.fillText(`Director: ${directorMode}`, 10, 50);
 
-  if (obstacles[0]) {
-    ctx.fillText(`Threat: ${obstacles[0].type} | State: ${obstacles[0].state}`, 10, 70);
-  }
-}
+//   if (obstacles[0]) {
+//     ctx.fillText(`Threat: ${obstacles[0].type} | State: ${obstacles[0].state}`, 10, 70);
+//   }
+// }
 
 function update() {
   if (gameOver) {
@@ -214,7 +213,7 @@ function update() {
   drawPlayer();
   drawObstacles();
   drawScore();
-  drawDebug();
+  //drawDebug();
 
   requestAnimationFrame(update);
 }
